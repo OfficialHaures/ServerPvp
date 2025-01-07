@@ -1,0 +1,9 @@
+name: ServerPvP
+version: '${project.version}'
+main: nl.inferno.serverPvp.ServerPvp
+api-version: '1.20'
+commands:
+  murdermystery:
+    description: Main command for Murder Mystery
+    aliases: [mm, murder]
+    usage: /<command> [join|leave|start]
