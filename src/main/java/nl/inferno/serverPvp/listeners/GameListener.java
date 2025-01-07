@@ -80,7 +80,6 @@ public class GameListener implements Listener {
                 plugin.getGameManager().resetPlayerGold(player);
             }
 
-            // Update scoreboard
             plugin.getScoreboardManager().updateScoreboard(player);
         }
     }

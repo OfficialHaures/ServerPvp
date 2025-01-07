@@ -27,7 +27,7 @@ public class GameManager {
         this.goldSpawns = new ArrayList<>();
         this.gameState = GameState.WAITING;
         this.countdown = 30;
-        this.gameTime = 300; // 5 minutes
+        this.gameTime = 300;
         startGoldSpawning();
     }
 
@@ -202,7 +202,6 @@ public class GameManager {
         player.getInventory().setArmorContents(null);
     }
 
-    // Getters and utility methods
     public GameState getGameState() {
         return gameState;
     }
@@ -226,7 +225,6 @@ public class GameManager {
     }
 
     private Location getWaitingSpawn() {
-        // Replace with actual waiting spawn location
         return new Location(Bukkit.getWorld("world"), 0, 64, 0);
     }
 

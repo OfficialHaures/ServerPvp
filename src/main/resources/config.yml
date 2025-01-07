@@ -1,0 +1,27 @@
+arenas:
+  arena1:
+    spawn:
+      world: "world"
+      x: 0
+      y: 64
+      z: 0
+      yaw: 0
+      pitch: 0
+    playerSpawns:
+      spawn1:
+        world: "world"
+        x: 10
+        y: 64
+        z: 10
+      spawn2:
+        world: "world"
+        x: -10
+        y: 64
+        z: -10
+    goldSpawns:
+      gold1:
+        world: "world"
+        x: 5
+        y: 64
+        z: 5
+    enabled: true

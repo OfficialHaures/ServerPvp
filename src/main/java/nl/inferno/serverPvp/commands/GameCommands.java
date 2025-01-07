@@ -72,7 +72,6 @@ public class GameCommands implements CommandExecutor {
         }
 
         if(args.length > 1) {
-            // Join specific arena
             String arenaName = args[1];
             Arena arena = plugin.getArenaManager().getArena(arenaName);
             if(arena != null && arena.isEnabled()) {
@@ -82,7 +81,6 @@ public class GameCommands implements CommandExecutor {
                 player.sendMessage(ChatColor.RED + "Arena not found or disabled!");
             }
         } else {
-            // Join random arena
             Arena randomArena = plugin.getArenaManager().getRandomArena();
             if(randomArena != null) {
                 plugin.getGameManager().addPlayer(player, randomArena);
@@ -162,7 +160,6 @@ public class GameCommands implements CommandExecutor {
     }
 
     private void handleStatsCommand(Player player) {
-        // Show player statistics
         player.sendMessage(ChatColor.GOLD + "=== Your Stats ===");
         player.sendMessage(ChatColor.YELLOW + "Games Played: " + plugin.getStatsManager().getGamesPlayed(player));
         player.sendMessage(ChatColor.YELLOW + "Wins: " + plugin.getStatsManager().getWins(player));
